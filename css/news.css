@@ -69,13 +69,15 @@
   display: flex;
   width: 1200px;
   height: 600px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .shen-ge {
   width: 200px;
   height: 300px;
   margin-top: 50px;
+  margin-left: 120px;
+  margin-right: 150px;
 }
 
 .news-image {
@@ -115,7 +117,7 @@
 
 .logo-change {
   width: 150px;
-  height: 230px;
+  height: 250px;
   margin-left: 380px;
   margin-top: 100px;
 }
@@ -128,11 +130,11 @@
   /* display: flex; */
 }
 
-.cc {
+.class-main {
   /* border: 1px solid bla ck; */
   /* display: flex; */
   width: 1200px;
-  height: 100vh;
+  height: 900px;
   margin: 0 auto;
 }
 
@@ -177,8 +179,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news01 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news01 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img01 {
@@ -187,9 +199,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a01.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -221,8 +234,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news02 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news02 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img02 {
@@ -231,9 +254,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a03.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -263,8 +287,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news03 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news03 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img03 {
@@ -273,9 +307,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a04.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -306,8 +341,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news04 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news04 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img04 {
@@ -316,9 +361,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a01.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -348,8 +394,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news06 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news06 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img06 {
@@ -358,51 +414,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a10.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
-  backface-visibility: hidden;
-}
-
-.card06:hover .news06 {
-  transform: rotateY(180deg);
-}
-
-.card06:hover .card_img06 {
-  transform: rotateY(0deg);
-}
-
-.card06 {
-  /* border: 1px solid black; */
-  width: 330px;
-  height: 224px;
-  position: relative;
-}
-
-.news06 {
-  border: 1px solid #dcdddd;
-  width: 100%;
-  height: 100%;
-  /* margin-right: 15px; */
-
-  letter-spacing: 10px;
-  writing-mode: tb-rl;
-
-  position: absolute;
-  transform: rotateY(0deg);
-  transition: all 2s;
-  backface-visibility: hidden;
-}
-
-.card_img06 {
-  border: 1px solid #dcdddd;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-
-  background-image: url('../img/chilibanner.jpg');
-  transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -434,8 +449,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news07 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news07 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img07 {
@@ -444,9 +469,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a05.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -477,8 +503,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news08 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news08 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img08 {
@@ -487,9 +523,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a06.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -519,8 +556,18 @@
 
   position: absolute;
   transform: rotateY(0deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
+}
+
+.news09 h3 {
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.news09 h4 {
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .card_img09 {
@@ -529,9 +576,10 @@
   height: 100%;
   position: absolute;
 
-  background-image: url('../img/chilibanner.jpg');
+  background-image: url('../img/a07.jpg');
+  background-size: cover;
   transform: rotateY(-180deg);
-  transition: all 2s;
+  transition: all 1s;
   backface-visibility: hidden;
 }
 
@@ -554,4 +602,79 @@
   align-items: center;
   font-size: 30px;
   background-color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(16, 16, 16, 0.95);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.all-ft {
+  width: 1200px;
+  display: flex;
+}
+
+.ft01 {
+  margin-right: 350px;
+  margin-top: 15px;
+}
+
+.ft01 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.ft01 p {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.ft02 {
+  margin-right: 420px;
+  margin-top: 15px;
+}
+
+.ft02 p {
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.ft02 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.ft03 {
+  margin-top: 15px;
+}
+
+.ft03 p {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.avg {
+  width: 100%;
+  height: 50px;
+  /* background-color: rgba(230, 0, 0, 1); */
+  background-color: rgba(16, 16, 16, 0.95);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.avg p {
+  color: white;
+  font-size: 14px;
 }
