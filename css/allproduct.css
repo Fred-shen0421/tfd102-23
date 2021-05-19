@@ -542,6 +542,7 @@
   width: 16.5%;
   height: 100vh;
   /* background-color: white; */
+  box-shadow: 1px 1px 10px gray;
 
   position: fixed;
   top: 0;
@@ -552,11 +553,11 @@
 }
 
 .shopping-car h3 {
-  background-color: #fff;
+  background-color: black;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: #000;
+  color: white;
   /* z-index: 2; */
 }
 
@@ -566,7 +567,7 @@
   height: 90vh;
   /* background-color: white; */
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -577,7 +578,7 @@
   height: 100px;
   /* border: 1px solid red; */
   /* background-color: white; */
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: white;
 }
 
 .car-title {

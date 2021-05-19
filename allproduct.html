@@ -23,8 +23,8 @@
             <img src="./img/product01.jpg" alt="" class="image">
 
             <div class="three-img">
-              <img src="./img/product01.jpg" alt="" class="image1">
-              <img src="./img/product01.jpg" alt="" class="image2">
+              <img src="./img/quality022.jpg" alt="" class="image1">
+              <img src="./img/feature03.jpg" alt="" class="image2">
               <img src="./img/product01.jpg" alt="" class="image3">
             </div>
 
@@ -98,7 +98,7 @@
               </div>
             </div>
 
-            <button class="button">加入購物車</button>
+            <a href="./shopping02.html"><button class="button">加入購物車</button></a>
           </div>
         </div>
       </div>
@@ -118,28 +118,30 @@
         <div class="fill-border">
           <div class="container">
             <div class="class">
-              <img src="./img/logo-change.png" alt="" class="logo" />
+              <a href="./index.html"
+              ><img src="./img/logo-change.png" alt="" class="logo"
+            /></a>
             </div>
   
             <nav class="nav">
               <ul class="nav_list">
                 <li>
-                  <a href="#">最新消息</a>
+                  <a href="./news.html">最新消息</a>
                 </li>
                 <li>
-                  <a href="#">品牌故事</a>
+                  <a href="./story.html">品牌故事</a>
                 </li>
                 <li>
-                  <a href="#">產品</a>
+                  <a href="./allproduct.html">產品</a>
                 </li>
                 <li>
-                  <a href="#">料理系列</a>
+                  <a href="./videopage.html">料理系列</a>
                 </li>
                 <li>
                   <a href="#">禮盒系列</a>
                 </li>
                 <li>
-                  <i class="fas fa-user"></i>
+                  <a href="./loginpage.html"><i class="fas fa-user"></i></a>
                 </li>
                 <li>
                   <div class="shop-cart">
@@ -321,6 +323,7 @@ disappear.addEventListener('click', function(){
 // page.addEventListener('click', function(){
 //   page.style.display = 'none'
 // })
+
 // 換圖
 let change = document.querySelector('.image')
 let change01 = document.querySelector('.image1')
@@ -328,8 +331,17 @@ let change02 = document.querySelector('.image2')
 let change03 = document.querySelector('.image3')
 
 change01.addEventListener('click' , function (){
-  change.src = './img/556677.png'
+  change.src = './img/quality022.jpg'
 })
+
+change02.addEventListener('click' , function (){
+  change.src = './img/feature03.jpg'
+})
+
+change03.addEventListener('click' , function (){
+  change.src = './img/product01.jpg'
+})
+
 
 // 購物車
 let buy = document.querySelector('.shop-cart');
