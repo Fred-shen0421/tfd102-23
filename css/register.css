@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* max-width: 1920px; */
+  /* margin: 0 auto; */
+}
+
+body {
+  background-image: url('../img/loginbanner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+
+.fill-border {
+  background-color: rgba(16, 16, 16, 0.95);
+  width: 1536px;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 102px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.nav_list {
+  /* border: 1px solid red; */
+  font-size: 20px;
+  display: flex;
+  padding: 0;
+}
+
+.nav_list > li {
+  /* border: 1px solid blue; */
+  display: flex;
+  list-style: none;
+  height: 100%;
+  /* margin-left: 60px; */
+  color: white;
+  font-size: 16px;
+}
+
+.nav_list > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_list > li :hover {
+  /* background-color: white; */
+  color: gray;
+}
+
+.main {
+  width: 1536px;
+
+  /* border: 1px solid white; */
+}
+
+.aa {
+  /* border: 1px solid white; */
+  width: 1200px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.aside {
+  position: absolute;
+
+  right: 250px;
+  top: 160px;
+}
+
+.login-top {
+  margin-left: 60px;
+}
+
+.login_title {
+  /* border: 1px solid white; */
+  color: white;
+  width: 350px;
+
+  margin-top: 200px;
+}
+
+.login-word {
+  color: white;
+  /* border: 1px solid white; */
+  width: 350px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.base-map {
+  /* border: 1px solid white; */
+  width: 500px;
+  height: 730px;
+  margin-top: 30px;
+  /* margin-left: 700px; */
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.external-01 {
+  display: flex;
+  justify-content: center;
+}
+
+.use-facebook {
+  /* border: 1px solid black; */
+  width: 450px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.external-02 {
+  display: flex;
+  justify-content: center;
+}
+
+.use-google {
+  /* border: 1px solid black; */
+  width: 450px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.list01 {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+
+  display: block;
+  font-size: 16px;
+  padding: 0px 23px 0px 23px;
+}
+
+.account {
+  width: 450px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.list02 {
+  /* border: 1px solid black; */
+
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 0px 23px 0px 23px;
+}
+
+.password {
+  width: 450px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.list03 {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+
+  display: block;
+  font-size: 16px;
+  padding: 0px 23px 0px 23px;
+}
+
+.confirm-password {
+  width: 450px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.list04 {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+
+  display: block;
+  font-size: 16px;
+  padding: 0px 23px 0px 23px;
+}
+
+.user {
+  width: 450px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.list05 {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+
+  display: block;
+  font-size: 16px;
+  padding: 0px 23px 0px 23px;
+}
+
+.year,
+.month,
+.day {
+  width: 148px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.list06 {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+
+  display: block;
+  font-size: 16px;
+  padding: 0px 23px 0px 23px;
+}
+
+.phone-number {
+  width: 450px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.list07 {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_reg {
+  /* border: 1px solid black; */
+  width: 450px;
+  height: 30px;
+  /* padding: 6px 12px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  border-radius: 4px;
+  margin-top: 30px;
+}

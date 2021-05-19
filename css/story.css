@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.banner {
+  border: 1px solid black;
+  width: 1530px;
+  height: 100vh;
+  background-color: #ccc;
+  background: linear-gradient(125deg, black, 50%, transparent 50%) center center /
+      100% 100%,
+    url('../img/chilibanner.jpg') right center / auto 100%;
+  color: white;
+
+  /* display: flex; */
+  margin: 0 auto;
+  /* margin-top: 60px; */
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+
+  margin: auto;
+}
+
+.banner-text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner-text h1 {
+  font-size: 80px;
+  border-bottom: 1px solid #333;
+  font-weight: 900;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.banner-text h1 small {
+  display: block;
+  font-size: 53px;
+  font-weight: 700;
+}
+
+.banner-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.story-content {
+  border: 1px solid blue;
+  width: 1530px;
+  height: 2500px;
+}
+
+.content01 {
+  display: flex;
+}
+
+.story-img01 {
+  margin-top: 150px;
+  margin-left: 500px;
+}
+
+.list01 {
+  margin-top: 350px;
+  font-size: 14px;
+}
+
+.content02 {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 550px;
+}
+
+.list02 {
+  margin-right: 100px;
+  font-size: 14px;
+  margin-top: 100px;
+}
+
+.content03 {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.list03 {
+  margin-right: 100px;
+  font-size: 14px;
+  margin-top: 150px;
+}
+
+.content04 {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 450px;
+}
+
+.list04 {
+  margin-top: 250px;
+  font-size: 14px;
+}
+
+.list05 {
+  margin-top: 100px;
+  margin-left: 350px;
+}

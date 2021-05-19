@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fill-border {
+  /* border: 1px solid red; */
+  /* background-color: rgba(16, 16, 16, 0.95); */
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  /* z-index: ; */
+}
+
+.background-black {
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 102px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.nav_list {
+  /* border: 1px solid red; */
+  font-size: 20px;
+  display: flex;
+  padding: 0;
+}
+
+.nav_list > li {
+  /* border: 1px solid blue; */
+  display: flex;
+  list-style: none;
+  height: 100%;
+  /* margin-left: 60px; */
+  color: white;
+  font-size: 16px;
+}
+
+.nav_list > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_list > li :hover {
+  /* background-color: white; */
+  color: gray;
+}
+
+.ban {
+  /* border: 1px solid red; */
+  background-image: url('../img/556677.png');
+  height: 500px;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.middle {
+  /* border: 1px solid blue; */
+  width: 1200px;
+  height: 250px;
+  display: flex;
+  margin: 0 auto;
+
+  /* position: relative; */
+}
+
+.aside {
+  /* border: 1px solid green; */
+  width: 300px;
+  height: 100%;
+}
+
+.box {
+  /* border: 1px solid red; */
+  display: flex;
+
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.search-btn {
+  border: 3px solid black;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.icon {
+  /* border: 1px solid yellow; */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.sort {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.sort-list {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.sort-list li {
+  margin-bottom: 5px;
+}
+
+.main {
+  /* border: 1px solid orange; */
+  width: 900px;
+  height: 100%;
+}
+
+.cook {
+  font-size: 16px;
+  margin-top: 45px;
+}
+
+.three-img {
+  margin-top: 100px;
+  margin-left: 310px;
+}
+
+.image1 {
+  width: 120px;
+  height: 80px;
+
+  margin-right: 10px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.image2 {
+  width: 120px;
+  height: 80px;
+
+  margin-right: 10px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.image3 {
+  width: 120px;
+  height: 80px;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.section {
+  /* border: 1px solid black; */
+  width: 1200px;
+  height: 1100px;
+  margin: 0 auto;
+}
+
+.video {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.cook-content {
+  margin-top: 50px;
+  margin-left: 150px;
+}

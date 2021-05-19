@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/shopping02.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="fill-border">
+        <div class="container">
+          <div class="class">
+            <img src="../img/logo-change.png" alt="" class="logo" />
+          </div>
+
+          <nav class="nav">
+            <ul class="nav_list">
+              <li>
+                <a href="#">最新消息</a>
+              </li>
+              <li>
+                <a href="#">品牌故事</a>
+              </li>
+              <li>
+                <a href="#">產品</a>
+              </li>
+              <li>
+                <a href="#">料理系列</a>
+              </li>
+              <li>
+                <a href="#">禮盒系列</a>
+              </li>
+              <li>
+                <i class="fas fa-user"></i>
+              </li>
+              <li>
+                <i class="fas fa-shopping-cart"></i>
+              </li>
+              <li>
+                <i class="fas fa-search"></i>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="process">
+        <div class="circle_01">1</div>
+
+        <div class="circle_02">2</div>
+
+        <div class="circle_03">3</div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="top-cart">
+        <p class="top-word">
+          已經是會員 ? 登入後可以更方便管理訂單 !
+          <a href="#" class="top-link">登入</a>
+        </p>
+      </div>
+    </aside>
+
+    <section class="shopping-cart">
+      <div class="middle-title">
+        <h3>購物車</h3>
+      </div>
+
+      <div class="middle-cart-items">
+        <div class="items-name">
+          <div class="name01">商品資料</div>
+          <div class="name02">優惠</div>
+          <div class="name03">單品價格</div>
+          <div class="name04">數量</div>
+          <div class="name05">小計</div>
+          <div class="name06"></div>
+        </div>
+
+        <div class="cart-items">
+          <div class="cart">
+            <a href="#" class="aa-img" target="_blank"
+              ><img src="../img/product01.jpg" alt="" />
+            </a>
+            <div class="aa-img-name">
+              即期品促銷-酸豆角辣醬
+              <p>180g(aaa)</p>
+            </div>
+          </div>
+          <div class="bb"></div>
+          <div class="cc">NT$200</div>
+          <!-- <div class="dd">1</div> -->
+          <div class="ee"><input type="text" /></div>
+          <div class="ff">NT$200</div>
+          <div class="gg"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="other-cart">
+      <!-- <div class="other-cart-items"> -->
+      <div class="cart02">
+        <div class="cart02-title">
+          <h3>選擇送貨及付款方式</h3>
+        </div>
+
+        <form class="cart02-content">
+          <div class="form_group_01">
+            <label for="order-delivery-country">送貨地點</label>
+            <span class="select-cart-form">
+              <select class="form-country" id="order-delivery-country">
+                <option value="CN">中國</option>
+                <option value="HK">香港</option>
+                <option value="MO">澳門</option>
+                <option value="MY">馬來西亞</option>
+                <option value="SG">新加坡</option>
+                <option value="TW">台灣</option>
+              </select>
+            </span>
+          </div>
+
+          <div class="form_group_02">
+            <label for="order-delivery-country">送貨方式</label>
+            <span class="select-cart-form">
+              <select class="form-control" id="order-delivery-country">
+                <option value="">宅配 (台灣本島)</option>
+                <option value="">全家 貨到付款</option>
+                <option value="">全家 付款後取貨</option>
+                <option value="">宅配 (台灣外島)</option>
+              </select>
+            </span>
+          </div>
+
+          <div class="form_group_03">
+            <label for="order-delivery-country">付款方式</label>
+            <span class="select-cart-form">
+              <select class="form-pay-control" id="order-delivery-country">
+                <option value="">信用卡 (支援國內外VISA , MASTER , JCB)</option>
+                <option value="">宅配貨到付款 (+NT$30)</option>
+              </select>
+            </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="cart03">
+        <div class="cart03-title">
+          <h3>訂單資訊</h3>
+        </div>
+
+        <div class="cart03-content">
+          <div class="cart03-top">
+            <span class="top-01">小計 :</span>
+            <span class="top-02">NT$200</span>
+          </div>
+
+          <div class="cart03-second">
+            <span class="second-01">運費 :</span>
+            <span class="second-02">NT$30</span>
+          </div>
+
+          <div class="cart03-third">
+            <span class="third-01">使用優惠代碼</span>
+          </div>
+
+          <hr class="line" />
+
+          <div class="cart03-four">
+            <span class="four-01">合計 :</span>
+            <span class="four-02">NT$230</span>
+          </div>
+
+          <div class="cart03-five">
+            <a href="#" class="go-pay">前往結帳</a>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </aside>
+  </body>
+</html>
