@@ -113,6 +113,11 @@ main {
   color: white;
 }
 
+.circle_03 a {
+  color: white;
+  text-decoration: none;
+}
+
 .circle_01::after {
   content: '';
   width: 631px;
@@ -401,4 +406,84 @@ aside .cart02-title {
 
 .go-pay:hover {
   background-color: #449d44;
+}
+
+.fake {
+  width: 100%;
+  height: 200px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(16, 16, 16, 0.95);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.all-ft {
+  width: 1200px;
+  display: flex;
+}
+
+.ft01 {
+  margin-right: 350px;
+  margin-top: 15px;
+}
+
+.ft01 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.ft01 p {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.ft02 {
+  margin-right: 420px;
+  margin-top: 15px;
+}
+
+.ft02 p {
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.ft02 h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.ft03 {
+  margin-top: 15px;
+}
+
+.ft03 p {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.avg {
+  width: 100%;
+  height: 50px;
+  /* background-color: rgba(230, 0, 0, 1); */
+  background-color: rgba(16, 16, 16, 0.95);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.avg p {
+  color: white;
+  font-size: 14px;
 }
