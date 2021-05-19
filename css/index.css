@@ -441,7 +441,7 @@ aside {
   background-repeat: no-repeat;
   background-size: contain;
   background-size: cover;
-  height: 100vh;
+  height: 1000px;
   /* margin-top: 10px; */
 }
 
@@ -466,7 +466,7 @@ aside {
   display: flex;
   margin: 0 auto;
   /* justify-content: center; */
-  padding-top: 20px;
+  padding-top: 100px;
   padding-left: 150px;
 }
 
@@ -506,7 +506,7 @@ aside {
 .form_02 {
   /* border: 1px solid blue; */
   width: 100%;
-  margin-top: 70px;
+  margin-top: 110px;
 
   transform: translateY(280%);
   transition: all 2s;
@@ -561,7 +561,7 @@ aside {
 .form_03 {
   /* border: 1px solid blue; */
   width: 100%;
-  margin-top: 70px;
+  margin-top: 110px;
 
   transform: translateY(150%);
   transition: all 2s;
