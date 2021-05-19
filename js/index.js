@@ -10,24 +10,6 @@ window.addEventListener('scroll', function () {
 });
 
 // 購物車
-
-// let search = document.querySelector('.shop-cart');
-// let page = document.querySelector('.black-page');
-// let shop = document.querySelector('.shopping-car');
-// let black = document.querySelector('.black');
-// let move = document.querySelector('.car-move');
-
-// search.addEventListener('click', function () {
-//   page.style.display = 'flex';
-//   shop.style.display = 'block';
-//   shop.classList.add('car-move');
-// });
-
-// black.addEventListener('click', function () {
-//   page.style.display = 'none';
-//   shop.style.display = 'none';
-// });
-
 let buy = document.querySelector('.shop-cart');
 let shop = document.querySelector('.shopping-car');
 let back = document.querySelector('body');
@@ -38,9 +20,21 @@ buy.addEventListener('click', function (e) {
 });
 
 back.addEventListener('click', function (e) {
-  e.stopPropagation();
+  if (e.target.id === 'xxx') {
+    return;
+  }
+
+  if (e.target.id === 'yyy') {
+    return;
+  }
+
+  if (e.target.className === 'car-title') {
+    return;
+  }
+
+  // 分別抓三個div的class or id 做判斷式
+  // e.stopPropagation();
   shop.style.left = '-300px';
-  // console.log('hi');
 });
 
 // 浮字
@@ -70,4 +64,27 @@ const content3 = document.querySelector('.content3');
 circle02.addEventListener('mouseover', function () {
   title3.classList.add('title_3-active');
   content3.classList.add('content3-active');
+});
+
+// 入侵
+
+let form01 = document.querySelector('.form_01');
+let form02 = document.querySelector('.form_02');
+let form03 = document.querySelector('.form_03');
+
+document.addEventListener('scroll', function () {
+  if (scrollY > 1000) {
+    form01.classList.add('down');
+  }
+
+  if (scrollY > 1300) {
+    form02.classList.add('down02');
+  }
+
+  if (scrollY > 1500) {
+    form03.classList.add('down03');
+  }
+  // if (scrollY > 1500) {
+  //   form03.style.transform = 'translateX(0%)';
+  // }
 });

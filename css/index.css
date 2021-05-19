@@ -79,7 +79,7 @@
   width: 16.5%;
   height: 100vh;
   background-color: white;
-
+  box-shadow: 1px 1px 10px gray;
   position: fixed;
   top: 0;
   left: -300px;
@@ -364,6 +364,8 @@ aside {
 }
 
 .circle01 {
+  background-image: url('../img/chili.png');
+  background-size: cover;
   border: 3px solid white;
   width: 100px;
   height: 100px;
@@ -382,12 +384,14 @@ aside {
 } */
 
 .circle01:hover {
-  background-image: url('../img/chili.png');
+  background-image: url('../img/a01.jpg');
   background-size: cover;
   transform: scale(1.5);
 }
 
 .circle02 {
+  background-image: url('../img/garlic.png');
+  background-size: cover;
   border: 3px solid white;
   width: 100px;
   height: 100px;
@@ -402,12 +406,14 @@ aside {
 }
 
 .circle02:hover {
-  background-image: url('../img/garlic.png');
+  background-image: url('../img/a03.jpg');
   background-size: cover;
   transform: scale(1.5);
 }
 
 .circle03 {
+  background-image: url('../img/capers.png');
+  background-size: cover;
   border: 3px solid white;
   width: 100px;
   height: 100px;
@@ -422,7 +428,7 @@ aside {
 }
 
 .circle03:hover {
-  background-image: url('../img/capers.png');
+  background-image: url('../img/a04.jpg');
   background-size: cover;
   transform: scale(1.5);
 }
@@ -443,6 +449,15 @@ aside {
   /* border: 1px solid blue; */
   width: 100%;
   /* margin-top: 70px; */
+
+  transform: translateY(380%);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.down {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .ban-form01 {
@@ -492,6 +507,15 @@ aside {
   /* border: 1px solid blue; */
   width: 100%;
   margin-top: 70px;
+
+  transform: translateY(280%);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.down02 {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .ban-form02 {
@@ -514,7 +538,7 @@ aside {
 }
 
 .name02 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color: white;
   font-size: 24px;
   margin-top: 10px;
@@ -538,6 +562,15 @@ aside {
   /* border: 1px solid blue; */
   width: 100%;
   margin-top: 70px;
+
+  transform: translateY(150%);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.down03 {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .ban-form03 {
