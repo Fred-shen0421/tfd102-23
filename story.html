@@ -5,11 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/story.css" />
+    <link rel="stylesheet" href="./css/story.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./aos/aos.css" />
   </head>
   <body>
+    <header>
+      <div class="ban">
+        <div class="fill-border">
+          <div class="container">
+            <div class="class">
+              <a href="./index.html"
+                ><img src="./img/logo-change.png" alt="" class="logo"
+              /></a>
+            </div>
+
+            <nav class="nav">
+              <ul class="nav_list">
+                <li>
+                  <a href="./news.html">最新消息</a>
+                </li>
+                <li>
+                  <a href="#">品牌故事</a>
+                </li>
+                <li>
+                  <a href="./allproduct.html">產品</a>
+                </li>
+                <li>
+                  <a href="./videopage.html">料理系列</a>
+                </li>
+                <li>
+                  <a href="#">禮盒系列</a>
+                </li>
+                <li>
+                  <a href="./loginpage.html"><i class="fas fa-user"></i></a>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-search"></i>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <div class="banner">
-      <div class="container">
+      <div class="b-content">
         <div class="banner-text">
           <h1>
             ABOUT US
@@ -23,7 +73,7 @@
     <div class="story-content">
       <div class="content01">
         <div class="story-img01">
-          <img src="../img/brand-pic-1.jpg" alt="" />
+          <img src="./img/brand-pic-1.jpg" alt="" />
         </div>
         <div class="list01">
           <pre>
@@ -58,7 +108,7 @@
           </pre>
         </div>
         <div class="story-img02">
-          <img src="../img/brand-pic-2.jpg" alt="" />
+          <img src="./img/brand-pic-2.jpg" alt="" />
         </div>
       </div>
 
@@ -83,13 +133,13 @@
         </div>
 
         <div class="story-img03">
-          <img src="../img/brand-pic-3.jpg" alt="" />
+          <img src="./img/brand-pic-3.jpg" alt="" />
         </div>
       </div>
 
       <div class="content04">
         <div class="story-img04">
-          <img src="../img/brand-pic-4.jpg" alt="" />
+          <img src="./img/brand-pic-4.jpg" alt="" />
         </div>
 
         <div class="list04">
@@ -108,5 +158,70 @@
         </pre>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="all-ft">
+        <div class="ft01">
+          <h3>聯絡我們</h3>
+          <p>電話 : 02-2437-5773</p>
+          <p>客服時間 : 週一至週五9:00~18:00</p>
+          <p>客服信箱 : fred870421@gmail.com</p>
+        </div>
+
+        <div class="ft02">
+          <h3>關於我</h3>
+          <p>品牌故事</p>
+          <p>品牌理念</p>
+        </div>
+
+        <div class="ft03">
+          <h3>SHEN-GE</h3>
+          <p>退換貨政策</p>
+          <p>條款及細則</p>
+          <p>購物須知</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="avg">
+      <p>
+        本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+        參考資源:XXXXXXXXXXXXX。
+        若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，
+        後續會由專人協助處理。
+      </p>
+    </div>
+
+    <!-- 圖片特效 -->
+
+    <script>
+      let content01 = document.querySelector('.content01');
+      let content02 = document.querySelector('.content02');
+      let content03 = document.querySelector('.content03');
+      let content04 = document.querySelector('.content04');
+      let list05 = document.querySelector('.list05');
+
+      document.addEventListener('scroll', function () {
+        console.log(scrollY);
+        if (scrollY > 500) {
+          content01.classList.add('godown');
+        }
+
+        if (scrollY > 900) {
+          content02.classList.add('godown_02');
+        }
+
+        if (scrollY > 1400) {
+          content03.classList.add('godown_03');
+        }
+
+        if (scrollY > 2100) {
+          content04.classList.add('godown_04');
+        }
+        if (scrollY > 2200) {
+          list05.classList.add('godown_05');
+        }
+      });
+    </script>
   </body>
 </html>
