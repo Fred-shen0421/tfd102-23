@@ -94,6 +94,10 @@
   writing-mode: vertical-rl;
 }
 
+.news-title-slo {
+  margin-top: 50px;
+}
+
 .section {
   /* border: 1px solid red; */
   width: 1536px;
