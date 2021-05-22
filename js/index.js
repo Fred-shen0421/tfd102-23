@@ -38,34 +38,32 @@ back.addEventListener('click', function (e) {
 });
 
 // 浮字
-
-const title1 = document.querySelector('.title_1');
+const title01 = document.querySelector('.detial-title01');
 const circle01 = document.querySelector('.circle01');
-const content1 = document.querySelector('.content1');
+const content01 = document.querySelector('.detial-content01');
 
 circle01.addEventListener('mouseover', function () {
-  title1.classList.add('title_1-active');
-  content1.classList.add('content1-active');
+  title01.classList.add('detial-title01-active');
+  content01.classList.add('detial-content01-active');
 });
 
-const title2 = document.querySelector('.title_2');
-const circle03 = document.querySelector('.circle03');
-const content2 = document.querySelector('.content2');
-
-circle03.addEventListener('mouseover', function () {
-  title2.classList.add('title_2-active');
-  content2.classList.add('content2-active');
-});
-
-const title3 = document.querySelector('.title_3');
+const title02 = document.querySelector('.detial-title02');
 const circle02 = document.querySelector('.circle02');
-const content3 = document.querySelector('.content3');
+const content02 = document.querySelector('.detial-content02');
 
 circle02.addEventListener('mouseover', function () {
-  title3.classList.add('title_3-active');
-  content3.classList.add('content3-active');
+  title02.classList.add('detial-title02-active');
+  content02.classList.add('detial-content02-active');
 });
 
+const title03 = document.querySelector('.detial-title03');
+const circle03 = document.querySelector('.circle03');
+const content03 = document.querySelector('.detial-content03');
+
+circle03.addEventListener('mouseover', function () {
+  title03.classList.add('detial-title03-active');
+  content03.classList.add('detial-content03-active');
+});
 // 入侵
 
 let form01 = document.querySelector('.form_01');
