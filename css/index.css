@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .fill-border {
   /* border: 1px solid red; */
   /* background-color: #b3afa3; */
@@ -11,6 +15,7 @@
 }
 
 .background-black {
+  width: 100%;
   background-color: rgba(16, 16, 16, 0.95);
   position: fixed;
   top: 0;
@@ -27,7 +32,7 @@
 }
 
 .container {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   /* border: 1px solid blue; */
   display: flex;
@@ -45,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   width: 800px;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-right: 10px;
 }
 
