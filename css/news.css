@@ -4,22 +4,20 @@
   padding: 0;
 }
 
-/* body {
-  overflow-x: hidden;
-} */
-
 .fill-border {
+  /* border: 1px solid red; */
   background-color: rgba(16, 16, 16, 0.95);
   width: 100%;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  z-index: 3; */
+  z-index: 3;
 }
 
 .container {
-  width: 1200px;
+  /* background-color: rgba(16, 16, 16, 0.95); */
+  width: 1180px;
   margin: 0 auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +30,8 @@
 }
 
 .nav {
-  border: 1px solid red;
-  margin-right: 25px;
+  /* border: 1px solid red; */
+  padding-right: 10px;
 }
 
 .nav_list {
@@ -48,10 +46,8 @@
   display: flex;
   list-style: none;
   height: 100%;
-  /* margin-left: 60px; */
   color: white;
   font-size: 16px;
-  /* padding: 5px; */
   transition: 2s all;
 }
 
@@ -89,7 +85,7 @@
 }
 
 .aside {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 100%;
   margin-top: 80px;
   /* height: 100vh; */
@@ -98,32 +94,31 @@
 }
 
 .aa {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
-  width: 1200px;
+  width: 1180px;
   height: 600px;
   margin: 0 auto;
 }
 
 .shen-ge {
-  width: 200px;
-  height: 300px;
+  width: 100px;
+  height: 350px;
   margin-top: 50px;
-  /* margin-left: 120px;
-  margin-right: 150px; */
+  margin-right: 150px;
+  margin-left: 10px;
 }
 
 .news-image {
   margin-top: 150px;
-  /* margin-left: 30px; */
+  margin-right: 270px;
   width: 600px;
   height: 400px;
 }
 
 .news-title {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 50px;
-  margin-left: 250px;
   letter-spacing: 10px;
   writing-mode: vertical-rl;
 }
@@ -133,7 +128,7 @@
 }
 
 .section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 350px;
 
@@ -141,9 +136,9 @@
 }
 
 .bb {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
-  width: 1200px;
+  width: 1180px;
   height: 350px;
   margin: 0 auto;
 }
@@ -157,6 +152,7 @@
   width: 150px;
   height: 250px;
   margin-left: 380px;
+  margin-right: 200px;
   margin-top: 100px;
 }
 
@@ -169,9 +165,8 @@
 }
 
 .class-main {
-  /* border: 1px solid bla ck; */
-  /* display: flex; */
-  width: 1200px;
+  /* border: 1px solid black; */
+  width: 1180px;
   height: 900px;
   margin: 0 auto;
 }
