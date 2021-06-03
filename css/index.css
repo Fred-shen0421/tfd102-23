@@ -45,12 +45,7 @@
   display: flex;
   justify-content: space-between;
   width: 800px;
-}
-
-.nav_list {
-  /* border: 1px solid red; */
   font-size: 20px;
-  display: flex;
   margin-right: 10px;
 }
 
@@ -62,6 +57,8 @@
   /* margin-left: 60px; */
   color: white;
   font-size: 16px;
+  padding: 5px;
+  transition: 2s all;
 }
 
 .nav_list > li > a {
@@ -70,8 +67,27 @@
 }
 
 .nav_list > li :hover {
-  /* background-color: white; */
   color: gray;
+}
+
+.nav-li-01:hover {
+  border-bottom: 2px solid rgba(230, 0, 0, 1);
+}
+
+.nav-li-02:hover {
+  border-bottom: 2px solid rgba(230, 0, 0, 1);
+}
+
+.nav-li-03:hover {
+  border-bottom: 2px solid rgba(230, 0, 0, 1);
+}
+
+.nav-li-04:hover {
+  border-bottom: 2px solid rgba(230, 0, 0, 1);
+}
+
+.nav-li-05:hover {
+  border-bottom: 2px solid rgba(230, 0, 0, 1);
 }
 
 .shopping-car {
