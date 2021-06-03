@@ -4,18 +4,22 @@
   padding: 0;
 }
 
+/* body {
+  overflow-x: hidden;
+} */
+
 .fill-border {
   background-color: rgba(16, 16, 16, 0.95);
   width: 100%;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 3; */
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,12 +31,16 @@
   margin-left: 10px;
 }
 
+.nav {
+  border: 1px solid red;
+  margin-right: 25px;
+}
+
 .nav_list {
   display: flex;
   justify-content: space-between;
   width: 800px;
   font-size: 20px;
-  margin-right: 10px;
 }
 
 .nav_list > li {
@@ -43,7 +51,7 @@
   /* margin-left: 60px; */
   color: white;
   font-size: 16px;
-  padding: 5px;
+  /* padding: 5px; */
   transition: 2s all;
 }
 
@@ -81,8 +89,8 @@
 }
 
 .aside {
-  /* border: 1px solid blue; */
-  width: 1536px;
+  border: 1px solid blue;
+  width: 100%;
   margin-top: 80px;
   /* height: 100vh; */
 
@@ -90,19 +98,19 @@
 }
 
 .aa {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   width: 1200px;
   height: 600px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .shen-ge {
   width: 200px;
   height: 300px;
   margin-top: 50px;
-  margin-left: 120px;
-  margin-right: 150px;
+  /* margin-left: 120px;
+  margin-right: 150px; */
 }
 
 .news-image {
@@ -113,6 +121,7 @@
 }
 
 .news-title {
+  border: 1px solid red;
   margin-top: 50px;
   margin-left: 250px;
   letter-spacing: 10px;
@@ -124,15 +133,15 @@
 }
 
 .section {
-  /* border: 1px solid red; */
-  width: 1536px;
+  border: 1px solid red;
+  width: 100%;
   height: 350px;
 
   /* display: flex; */
 }
 
 .bb {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   width: 1200px;
   height: 350px;
@@ -153,7 +162,7 @@
 
 .main {
   /* border: 1px solid red; */
-  width: 1536px;
+  width: 100%;
   /* height: 100vh; */
   box-sizing: border-box;
   /* display: flex; */
@@ -643,11 +652,12 @@
 }
 
 .all-ft {
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
   width: 1200px;
 }
 
 .ft-top {
+  /* border: 1px solid blue; */
   display: flex;
 }
 
