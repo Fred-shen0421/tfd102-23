@@ -4,6 +4,10 @@
   list-style: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .fill-border {
   background-color: rgba(16, 16, 16, 0.95);
   width: 100%;
@@ -143,7 +147,7 @@
 
 .content01 {
   /* border: 1px solid blue; */
-  width: 1200px;
+  width: 1180px;
   display: flex;
   margin: 0 auto;
   transform: translateY(-100%);
@@ -168,7 +172,7 @@
 
 .content02 {
   /* border: 1px solid blue; */
-  width: 1200px;
+  width: 1180px;
   display: flex;
   margin: 0 auto;
   transform: translateY(500%);
@@ -194,7 +198,7 @@
 
 .content03 {
   /* border: 1px solid blue; */
-  width: 1200px;
+  width: 1180px;
   display: flex;
   margin: 0 auto;
 
@@ -221,7 +225,7 @@
 
 .content04 {
   /* border: 1px solid blue; */
-  width: 1200px;
+  width: 1180px;
   display: flex;
   margin: 0 auto;
   transform: translateY(170%);
@@ -246,7 +250,7 @@
 
 .list05 {
   /* border: 1px solid blue; */
-  width: 1200px;
+  width: 1180px;
   display: flex;
   margin: 0 auto;
   transform: translateX(-130%);
