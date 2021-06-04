@@ -116,6 +116,10 @@
   height: 400px;
 }
 
+.news02-img {
+  display: none;
+}
+
 .news-title {
   /* border: 1px solid red; */
   margin-top: 50px;
@@ -208,7 +212,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -263,7 +267,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -316,7 +320,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -370,7 +374,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -409,6 +413,19 @@
   transform: rotateY(0deg);
 }
 
+.news05 {
+  border: 1px solid #dcdddd;
+  width: 330px;
+  height: 224px;
+  margin-right: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #fff;
+}
+
 .card06 {
   /* border: 1px solid black; */
   width: 330px;
@@ -423,7 +440,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -478,7 +495,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -532,7 +549,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -585,7 +602,7 @@
   /* margin-right: 15px; */
 
   letter-spacing: 10px;
-  writing-mode: tb-rl;
+  /* writing-mode: tb-rl; */
 
   position: absolute;
   transform: rotateY(0deg);
@@ -622,19 +639,6 @@
 
 .card09:hover .card_img09 {
   transform: rotateY(0deg);
-}
-
-.news05 {
-  border: 1px solid #dcdddd;
-  width: 330px;
-  height: 224px;
-  margin-right: 15px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  background-color: #fff;
 }
 
 .footer {
