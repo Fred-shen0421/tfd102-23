@@ -4,9 +4,9 @@
   list-style: none;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 .fill-border {
   background-color: rgba(16, 16, 16, 0.95);
@@ -266,6 +266,10 @@ body {
 .godown_05 {
   opacity: 1;
   transform: translateX(0%);
+}
+
+.list06 {
+  display: none;
 }
 
 .footer {
