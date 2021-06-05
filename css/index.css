@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #323232;
 }
 
 .fill-border {
@@ -625,6 +626,166 @@ body {
   background-color: #fff;
   background-image: url('../img/feature03.jpg');
   background-size: cover;
+}
+
+.poker-card {
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.poker-title {
+  /* border: 1px solid blue; */
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title-slo {
+  font-weight: 900;
+  font-size: 25px;
+  color: rgba(230, 0, 0, 1);
+  text-align: center;
+}
+
+.title-slo02 {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.poker-box {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1200px;
+}
+
+.menu-card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card::before,
+.menu-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.menu-card:hover::before {
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card:hover::after {
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.menu-card:hover .menu-img {
+  bottom: 90px;
+}
+
+.menu-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-info {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 70px;
+  text-align: center;
+  z-index: 1;
+}
+
+.menu-info h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(230, 0, 0, 1);
+}
+
+.menu-info .button {
+  border: 1px solid rgba(230, 0, 0, 1);
+  margin: 0 auto;
+}
+
+.menu-info .button a {
+  display: block;
+  text-decoration: none;
+  color: rgba(230, 0, 0, 1);
+}
+
+.menu-info .button:hover a {
+  color: #fff;
+}
+
+button {
+  outline-style: none;
+}
+.button {
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button::after {
+  background: rgba(230, 0, 0, 1);
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  left: -50%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+.button:hover::after {
+  height: 100%;
+  width: 200%;
 }
 
 .footer {
