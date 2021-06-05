@@ -5,7 +5,7 @@
 }
 
 .fill-border {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* background-color: #b3afa3; */
   width: 100%;
 }
@@ -18,8 +18,8 @@
 }
 
 .container {
-  width: 1180px;
-  border: 1px solid blue;
+  width: 1200px;
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,14 +29,14 @@
 .logo {
   width: 80px;
   height: 102px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .nav_list {
   display: flex;
   justify-content: space-between;
   width: 800px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .nav_list > li {

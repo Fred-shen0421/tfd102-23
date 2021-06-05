@@ -15,7 +15,7 @@
 
 .container {
   /* background-color: rgba(16, 16, 16, 0.95); */
-  width: 1180px;
+  width: 1200px;
   margin: 0 auto;
   /* border: 1px solid blue; */
   display: flex;
@@ -26,19 +26,14 @@
 .logo {
   width: 80px;
   height: 102px;
-  margin-left: 10px;
-}
-
-.nav {
-  /* border: 1px solid red; */
-  padding-right: 10px;
+  /* margin-left: 10px; */
 }
 
 .nav_list {
   display: flex;
   justify-content: space-between;
   width: 800px;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .nav_list > li {
@@ -48,6 +43,7 @@
   height: 100%;
   color: white;
   font-size: 16px;
+  padding: 5px;
   transition: 2s all;
 }
 
