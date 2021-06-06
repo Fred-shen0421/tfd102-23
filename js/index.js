@@ -86,3 +86,40 @@ document.addEventListener('scroll', function () {
   //   form03.style.transform = 'translateX(0%)';
   // }
 });
+
+// login
+
+const signinbtn = document.querySelector('.signinbtn');
+const signupbtn = document.querySelector('.signupbtn');
+const formbx = document.querySelector('.formbx');
+const body = document.querySelector('body');
+
+signupbtn.onclick = function () {
+  formbx.classList.add('active');
+  // body.classList.add('active');
+};
+
+signinbtn.onclick = function () {
+  formbx.classList.remove('active');
+  // body.classList.remove('active');
+};
+
+let clicklogin = document.querySelector('.click-login');
+let black = document.querySelector('.black');
+let wrong = document.querySelector('.wrong');
+let wrong02 = document.querySelector('.wrong02');
+
+clicklogin.addEventListener('click', function () {
+  black.style.visibility = 'visible';
+  black.style.opacity = '1';
+});
+
+wrong.addEventListener('click', function () {
+  black.style.visibility = 'hidden';
+  black.style.opacity = '0';
+});
+
+wrong02.addEventListener('click', function () {
+  black.style.visibility = 'hidden';
+  black.style.opacity = '0';
+});
