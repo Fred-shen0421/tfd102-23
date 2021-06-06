@@ -10,7 +10,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 1;
 }
 
 .container {
@@ -78,6 +78,10 @@
 
 .nav-li-05:hover {
   border-bottom: 2px solid rgba(230, 0, 0, 1);
+}
+
+.menu-wrap {
+  display: none;
 }
 
 .aside {
