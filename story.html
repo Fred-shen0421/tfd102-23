@@ -19,6 +19,52 @@
     />
   </head>
   <body>
+    <!-- login -->
+    <div class="black">
+      <div class="login_container">
+        <div class="bluebg">
+          <div class="box signin">
+            <h2>已有帳號 ?</h2>
+            <button class="signinbtn">登入</button>
+          </div>
+
+          <div class="box signup">
+            <h2>還未註冊 ?</h2>
+            <button class="signupbtn">註冊</button>
+          </div>
+        </div>
+
+        <div class="formbx">
+          <div class="form signinform">
+            <form>
+              <div class="wrong">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <h3>會員登入</h3>
+              <input type="text" placeholder="輸入帳號" />
+              <input type="password" placeholder="輸入密碼" />
+              <input type="submit" value="登入" />
+              <a href="#" class="forgot">忘記密碼</a>
+            </form>
+          </div>
+          <div class="form signupform">
+            <form>
+              <div class="wrong02">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <h3>會員註冊</h3>
+              <input type="text" placeholder="輸入帳號" />
+              <input type="text" placeholder="電子信箱" />
+              <input type="password" placeholder="輸入密碼" />
+              <input type="password" placeholder="確認密碼" />
+              <input type="submit" value="註冊" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login end -->
+
     <header>
       <div class="free">
         <div class="fill-border">
@@ -47,7 +93,9 @@
                   <a href="#">禮盒系列</a>
                 </li>
                 <li>
-                  <a href="./loginpage.html"><i class="fas fa-user"></i></a>
+                  <div class="click-login">
+                    <i class="fas fa-user"></i>
+                  </div>
                 </li>
                 <li>
                   <div class="shop-cart">
@@ -263,6 +311,43 @@
         if (scrollY > 2200) {
           list05.classList.add('godown_05');
         }
+      });
+
+      // login
+
+      const signinbtn = document.querySelector('.signinbtn');
+      const signupbtn = document.querySelector('.signupbtn');
+      const formbx = document.querySelector('.formbx');
+      const body = document.querySelector('body');
+
+      signupbtn.onclick = function () {
+        formbx.classList.add('active');
+        // body.classList.add('active');
+      };
+
+      signinbtn.onclick = function () {
+        formbx.classList.remove('active');
+        // body.classList.remove('active');
+      };
+
+      let clicklogin = document.querySelector('.click-login');
+      let black = document.querySelector('.black');
+      let wrong = document.querySelector('.wrong');
+      let wrong02 = document.querySelector('.wrong02');
+
+      clicklogin.addEventListener('click', function () {
+        black.style.visibility = 'visible';
+        black.style.opacity = '1';
+      });
+
+      wrong.addEventListener('click', function () {
+        black.style.visibility = 'hidden';
+        black.style.opacity = '0';
+      });
+
+      wrong02.addEventListener('click', function () {
+        black.style.visibility = 'hidden';
+        black.style.opacity = '0';
       });
     </script>
   </body>
