@@ -94,14 +94,21 @@ const toggleForm = () => {
   contain.classList.toggle('active');
 };
 
-let clicklogin = document.querySelector('.click-login');
+let clicklogin = document.querySelectorAll('.click-login');
 let black = document.querySelector('.black');
 let wrong = document.querySelector('.wrong');
 let wrong02 = document.querySelector('.wrong02');
 
-clicklogin.addEventListener('click', function () {
-  black.style.visibility = 'visible';
-  black.style.opacity = '1';
+// clicklogin.addEventListener('click', function () {
+//   black.style.visibility = 'visible';
+//   black.style.opacity = '1';
+// });
+console.log(clicklogin);
+clicklogin.forEach((e) => {
+  e.addEventListener('click', function () {
+    black.style.visibility = 'visible';
+    black.style.opacity = '1';
+  });
 });
 
 wrong.addEventListener('click', function () {

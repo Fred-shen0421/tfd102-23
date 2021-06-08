@@ -597,6 +597,18 @@
     display: none;
   }
 
+  .black .contain {
+    max-width: 400px;
+  }
+
+  .black .contain .imgBx {
+    display: none;
+  }
+
+  .black .contain .user .formBx {
+    width: 100%;
+  }
+
   .menu-wrap {
     display: flex;
     position: fixed;
@@ -1301,6 +1313,18 @@
     display: none;
   }
 
+  .black .contain {
+    max-width: 400px;
+  }
+
+  .black .contain .imgBx {
+    display: none;
+  }
+
+  .black .contain .user .formBx {
+    width: 100%;
+  }
+
   .menu-wrap {
     display: flex;
     position: fixed;
@@ -1979,6 +2003,18 @@
 
   .nav {
     display: none;
+  }
+
+  .black .contain {
+    max-width: 400px;
+  }
+
+  .black .contain .imgBx {
+    display: none;
+  }
+
+  .black .contain .user .formBx {
+    width: 100%;
   }
 
   .menu-wrap {
