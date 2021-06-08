@@ -1349,6 +1349,7 @@
     --overlay-color: rgba(16, 16, 16, 0.95);
     --menu-speed: 0.75s;
   }
+
   * {
     box-sizing: border-box;
     margin: 0;
