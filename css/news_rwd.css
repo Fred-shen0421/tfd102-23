@@ -1918,8 +1918,8 @@
   .menu-wrap .menu > div {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 400vw;
+    height: 400vw;
     display: flex;
     flex: none;
     align-items: center;
@@ -2022,7 +2022,7 @@
   .class-main {
     /* border: 1px solid black; */
     width: 100%;
-    height: 3200px;
+    height: 2600px;
     margin: 0 auto;
   }
 
@@ -2055,12 +2055,12 @@
 
   .card01 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
 
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .news01 {
@@ -2069,7 +2069,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 7px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2080,14 +2080,14 @@
 
   .news01 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 50px;
   }
 
   .news01 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 50px;
   }
 
   .card_img01 {
@@ -2113,12 +2113,12 @@
 
   .card02 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
 
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .news02 {
@@ -2127,7 +2127,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 7px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2138,14 +2138,14 @@
 
   .news02 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 50px;
   }
 
   .news02 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 50px;
   }
 
   .card_img02 {
@@ -2171,9 +2171,9 @@
 
   .card03 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
-    margin-bottom: 30px;
+    width: 330px;
+    height: 224px;
+    margin-bottom: 50px;
     position: relative;
   }
 
@@ -2183,7 +2183,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 7px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2194,14 +2194,14 @@
 
   .news03 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 50px;
   }
 
   .news03 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 50px;
   }
 
   .card_img03 {
@@ -2227,11 +2227,11 @@
 
   .card04 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .news04 {
@@ -2240,7 +2240,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 6px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2251,14 +2251,14 @@
 
   .news04 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
   .news04 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 30px;
   }
 
   .card_img04 {
@@ -2284,10 +2284,10 @@
 
   .news05 {
     border: 1px solid #dcdddd;
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2297,10 +2297,10 @@
 
   .card06 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .news06 {
@@ -2309,7 +2309,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 6px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2320,14 +2320,14 @@
 
   .news06 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
   .news06 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 30px;
   }
 
   .card_img06 {
@@ -2353,10 +2353,10 @@
 
   .card07 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-right: 0px;
   }
 
@@ -2366,7 +2366,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 6px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2377,14 +2377,14 @@
 
   .news07 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
   .news07 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 30px;
   }
 
   .card_img07 {
@@ -2410,11 +2410,11 @@
 
   .card08 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .news08 {
@@ -2423,7 +2423,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 6px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2434,14 +2434,14 @@
 
   .news08 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
   .news08 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 30px;
   }
 
   .card_img08 {
@@ -2467,8 +2467,8 @@
 
   .card09 {
     /* border: 1px solid black; */
-    width: 400px;
-    height: 294px;
+    width: 330px;
+    height: 224px;
     position: relative;
   }
 
@@ -2478,7 +2478,7 @@
     height: 100%;
     /* margin-right: 15px; */
 
-    letter-spacing: 9px;
+    letter-spacing: 6px;
     /* writing-mode: tb-rl; */
 
     position: absolute;
@@ -2489,14 +2489,14 @@
 
   .news09 h3 {
     margin-right: 0px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
 
   .news09 h4 {
     margin-right: 0px;
-    margin-left: 110px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 30px;
   }
 
   .card_img09 {
