@@ -226,6 +226,11 @@
               <li><a href="./allproduct.html">產品</a></li>
               <li><a href="./videopage.html">料理系列</a></li>
               <li><a href="#">禮盒系列</a></li>
+              <li>
+                <div class="click-login">
+                  <i class="fas fa-user"></i>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -259,7 +264,7 @@
           <div class="model01">
             <img src="./img/product01.jpg" alt="" class="img01">
             <div class="product01">
-              <div class="product01-content">即期品促銷-小魚乾辣椒醬</div>
+              <div class="product-content">即期品促銷-小魚乾辣椒醬</div>
               <div class="date01">180g (效期至2022/04/21)</div>
               <div class="btn_price">
                 <button type="button" class="pro-car">加入購物車</button>
@@ -271,7 +276,7 @@
           <div class="model02">
             <img src="./img/product01.jpg" alt="" class="img02">
             <div class="product02">
-              <div class="product02-content">即期品促銷-小卷辣椒醬</div>
+              <div class="product-content">即期品促銷-小卷辣椒醬</div>
               <div class="date02">180g (效期至2022/04/21)</div>
               <div class="btn_price">
                 <button type="button" class="pro-car">加入購物車</button>
@@ -286,7 +291,7 @@
           <div class="model03">
           <img src="./img/product01.jpg" alt="" class="img03">
           <div class="product03">
-            <div class="product03-content">即期品促銷-原味辣椒醬</div>
+            <div class="product-content">即期品促銷-原味辣椒醬</div>
             <div class="date03">180g (效期至2022/04/21)</div>
             <div class="btn_price">
               <button type="button" class="pro-car">加入購物車</button>
@@ -298,7 +303,7 @@
         <div class="model04">
           <img src="./img/product01.jpg" alt="" class="img04">
           <div class="product04">
-            <div class="product04-content">即期品促銷-酸豆角辣椒醬</div>
+            <div class="product-content">即期品促銷-酸豆角辣椒醬</div>
             <div class="date04">180g (效期至2022/04/21)</div>
             <div class="btn_price">
               <button type="button" class="pro-car">加入購物車</button>
@@ -313,7 +318,7 @@
         <div class="model05">
           <img src="./img/product01.jpg" alt="" class="img05">
           <div class="product05">
-            <div class="product05-content">即期品促銷-櫻花蝦辣椒醬</div>
+            <div class="product-content">即期品促銷-櫻花蝦辣椒醬</div>
             <div class="date05">180g (效期至2022/04/21)</div>
             <div class="btn_price">
               <button type="button" class="pro-car">加入購物車</button>
@@ -367,8 +372,6 @@
         </div>
       </div>
     </footer>
-
-
 
     <script>
       // header
@@ -453,31 +456,81 @@ back.addEventListener('click', function (e) {
 // login
 
 const toggleForm = () => {
-        const contain = document.querySelector('.contain');
-        contain.classList.toggle('active');
-      };
+  const contain = document.querySelector('.contain');
+  contain.classList.toggle('active');
+};
 
-      let clicklogin = document.querySelector('.click-login');
-      let black = document.querySelector('.black');
-      let wrong = document.querySelector('.wrong');
-      let wrong02 = document.querySelector('.wrong02');
+let clicklogin = document.querySelectorAll('.click-login');
+let black = document.querySelector('.black');
+let wrong = document.querySelector('.wrong');
+let wrong02 = document.querySelector('.wrong02');
 
-      clicklogin.addEventListener('click', function () {
-        black.style.visibility = 'visible';
-        black.style.opacity = '1';
-      });
+// clicklogin.addEventListener('click', function () {
+//   black.style.visibility = 'visible';
+//   black.style.opacity = '1';
+// });
+console.log(clicklogin);
+clicklogin.forEach((e) => {
+  e.addEventListener('click', function () {
+    black.style.visibility = 'visible';
+    black.style.opacity = '1';
+  });
+});
 
-      wrong.addEventListener('click', function () {
-        black.style.visibility = 'hidden';
-        black.style.opacity = '0';
-      });
+wrong.addEventListener('click', function () {
+  black.style.visibility = 'hidden';
+  black.style.opacity = '0';
+});
 
-      wrong02.addEventListener('click', function () {
-        black.style.visibility = 'hidden';
-        black.style.opacity = '0';
-      });
+wrong02.addEventListener('click', function () {
+  black.style.visibility = 'hidden';
+  black.style.opacity = '0';
+});
 
+      // let pushing = document.querySelectorAll('.pro-car');
+      // let joining = document.querySelector('.shopping-car');
+      // let shopping = document.querySelector('shopping-car-content');
+      // let allproduct = [{
+      //   Image: "./img/product01.jpg",
+      //   h2: "即期品促銷-小魚乾辣椒醬",
+      //   price: 200
+      // },{
+      //   Image: "./img/product01.jpg",
+      //   h2: "即期品促銷-小卷辣椒醬",
+      //   price: 200
+      // },{
+      //   Image: "./img/product01.jpg",
+      //   h2: "即期品促銷-原味辣椒醬",
+      //   price: 200
+      // },{
+      //   Image: "./img/product01.jpg",
+      //   h2: "即期品促銷-酸豆辣椒醬",
+      //   price: 200
+      // },{
+      //   Image: "./img/product01.jpg",
+      //   h2: "即期品促銷-櫻花蝦辣椒醬",
+      //   price: 200
+      // }
+      // ];
+      // console.log(pushing)
+      // pushing.forEach((b) => {
+      //   b.addEventListener("click" , function(e){
+      //     // productname = e.closest(".main").querySelectorAll(".product-content")
+      //     // console.log(productname)
+      //     if(e.target.closest(".main").querySelector(".product-content").textContent){
+      //       console.log(e.target.closest(".main").querySelector(".product-content").textContent)
+      //     }
 
+          
+      //   })
+      // })
+
+      // let obj = {};
+      //     obj.img = e.closest(".model01").querySelector(".img01")
+      //     obj.name = e.closest(".model01").querySelector(".product01-content")
+      //     obj.price = e.closest(".model01").querySelector(".price01")
+
+      //     console.log(obj)
 </script>
   </body>
 </html>
