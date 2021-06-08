@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/shopping03.css" />
+    <link rel="stylesheet" href="./css/shopping03_rwd.css">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -14,46 +15,49 @@
     />
   </head>
   <body>
-   <!-- login -->
-   <div class="black">
-    <div class="login_container">
-      <div class="bluebg">
-        <div class="box signin">
-          <h2>已有帳號 ?</h2>
-          <button class="signinbtn">登入</button>
+  <!-- login -->
+  <div class="black">
+    <div class="contain">
+      <div class="user signinBx">
+        <div class="imgBx">
+          <img src="./img/fred01.jpg" alt="" />
         </div>
-
-        <div class="box signup">
-          <h2>還未註冊 ?</h2>
-          <button class="signupbtn">註冊</button>
-        </div>
-      </div>
-
-      <div class="formbx">
-        <div class="form signinform">
-          <form>
+        <div class="formBx">
+          <form action="" onsubmit="return false;">
             <div class="wrong">
               <i class="fas fa-times-circle"></i>
             </div>
-            <h3>會員登入</h3>
-            <input type="text" placeholder="輸入帳號" />
-            <input type="password" placeholder="輸入密碼" />
-            <input type="submit" value="登入" />
-            <a href="#" class="forgot">忘記密碼</a>
+            <h2>會員登入</h2>
+            <input type="text" name="" placeholder="輸入帳號" />
+            <input type="password" name="" placeholder="輸入密碼" />
+            <input type="submit" name="" value="登入" />
+            <p class="signup">
+              還未註冊 ?
+              <a href="#" onclick="toggleForm();">註冊</a>
+            </p>
           </form>
         </div>
-        <div class="form signupform">
-          <form>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form action="" onsubmit="return false;">
             <div class="wrong02">
               <i class="fas fa-times-circle"></i>
             </div>
-            <h3>會員註冊</h3>
-            <input type="text" placeholder="輸入帳號" />
-            <input type="text" placeholder="電子信箱" />
-            <input type="password" placeholder="輸入密碼" />
-            <input type="password" placeholder="確認密碼" />
-            <input type="submit" value="註冊" />
+            <h2>註冊會員</h2>
+            <input type="text" name="" placeholder="輸入帳號" />
+            <input type="email" name="" placeholder="電子信箱" />
+            <input type="password" name="" placeholder="輸入密碼" />
+            <input type="password" name="" placeholder="確認密碼" />
+            <input type="submit" name="" value="註冊" />
+            <p class="signup">
+              已有帳號 ?
+              <a href="#" onclick="toggleForm();">登入</a>
+            </p>
           </form>
+        </div>
+        <div class="imgBx">
+          <img src="./img/fred02.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -104,7 +108,32 @@
     </div>
   </header>
 
-    <main>
+  <!-- hamburger-menu -->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler" />
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="./news.html">最新消息</a></li>
+            <li><a href="./story.html">品牌故事</a></li>
+            <li><a href="./allproduct.html">產品</a></li>
+            <li><a href="./videopage.html">料理系列</a></li>
+            <li><a href="#">禮盒系列</a></li>
+            <li>
+              <div class="click-login">
+                <i class="fas fa-user"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hamburger-menu(end) -->
+
+    <main class="main">
       <div class="process">
         <div class="circle_01">1</div>
 
@@ -258,91 +287,98 @@
 
     <!-- <side class="another-cart"> -->
     <div class="remarks">
-      <div class="remarks-title">
-        <h3>訂單備註</h3>
+      <div>
+        <div class="remarks-title">
+          <h3>訂單備註</h3>
+        </div>
+        <div class="notes">
+          <textarea
+            name="notes"
+            cols="75"
+            rows="5"
+            placeholder="有什麼想告訴賣家的嗎?"
+
+            class="note"
+          ></textarea>
+        </div>
       </div>
-      <div class="notes">
-        <textarea
-          name="notes"
-          cols="75"
-          rows="5"
-          placeholder="有什麼想告訴賣家的嗎?"
-        ></textarea>
+      
+
+      <div class="pay-data">
+        <div class="pay-title">
+          <h3>付款資料</h3>
+        </div>
+  
+        <div class="pay-choice">
+          已選擇的付款方式: 信用卡（支援國內外Visa, Master, JCB）
+        </div>
+  
+        <div class="row1">
+          <form class="card-data01">
+            <label for="costomer-name"><pre>持卡人名稱 </pre></label>
+            <input type="text" name="costomer-name" class="card-name" />
+            <div class="notice01">與信用卡上名稱相同</div>
+          </form>
+    
+          <form class="card-data02">
+            <label for="costomer-mail"><pre>信用卡號 </pre></label>
+            <input type="text" name="costomer-mail" class="card-num" />
+            <div class="notice02">不留空格</div>
+          </form>
+        </div>
+  
+        <div class="row2">
+          <form class="card-data03">
+            <label for="costomer-name"><pre>有效日期 </pre></label>
+            <input type="text" name="costomer-name" class="card-date" placeholder="MM/YY"/>
+          </form>
+          
+          <form class="card-data04">
+            <label for="costomer-mail"><pre>安全碼(CVC) </pre></label>
+            <input type="text" name="costomer-mail" class="card-safe" />
+          </form>
+        </div>
       </div>
     </div>
     <!-- </side> -->
-
-    <div class="pay-data">
-      <div class="pay-title">
-        <h3>付款資料</h3>
-      </div>
-
-      <div class="pay-choice">
-        已選擇的付款方式: 信用卡（支援國內外Visa, Master, JCB）
-      </div>
-
-      <div class="row1">
-        <form class="card-data01">
-          <label for="costomer-name"><pre>持卡人名稱 </pre></label>
-          <input type="text" name="costomer-name" class="card-name" />
-          <div class="notice01">與信用卡上名稱相同</div>
-        </form>
-  
-        <form class="card-data02">
-          <label for="costomer-mail"><pre>信用卡號 </pre></label>
-          <input type="text" name="costomer-mail" class="card-num" />
-          <div class="notice02">不留空格</div>
-        </form>
-      </div>
-
-      <div class="row2">
-        <form class="card-data03">
-          <label for="costomer-name"><pre>有效日期 </pre></label>
-          <input type="text" name="costomer-name" class="card-date" placeholder="MM/YY"/>
-        </form>
-        
-        <form class="card-data04">
-          <label for="costomer-mail"><pre>安全碼(CVC) </pre></label>
-          <input type="text" name="costomer-mail" class="card-safe" />
-        </form>
-      </div>
-    </div>
-
-    <div class="pay-data02">
-      <div class="pay-title02">
-        <h3>付款資料</h3>
+    <div class="here">
+      <div class="pay-data02">
+        <div class="pay-title02">
+          <h3>付款資料</h3>
+        </div>
+    
+        <div class="pay-choice02">
+          已選擇的付款方式: 宅配貨到付款 (+NT$30)
+        </div>
       </div>
   
-      <div class="pay-choice02">
-        已選擇的付款方式: 宅配貨到付款 (+NT$30)
+      <div class="invoice">
+        <div class="invoice-title">
+          <h3>索取發票</h3>
+        </div>
+    
+        <div class="invoice-row">
+          <form class="way01">
+            <label for=""><pre>發票類型 </pre></label>
+            <select class="type01">
+              <option value="雲端發票">雲端發票</option>
+              <option value="捐贈發票">捐贈發票</option>
+              <option value="二聯式紙本">二聯式紙本</option>
+            </select>
+          </form>
+          
+          <form class="way02">
+            <label for=""><pre>載具類型 </pre></label>
+            <select class="type02">
+              <option value="會員載具">會員載具</option>
+              <option value="手機條碼">手機條碼</option>
+              <option value="自然人憑證條碼">自然人憑證條碼</option>
+            </select>
+          </form>
+        </div>
       </div>
     </div>
-
-    <div class="invoice">
-      <div class="invoice-title">
-        <h3>索取發票</h3>
-      </div>
-  
-      <div class="invoice-row">
-        <form class="way01">
-          <label for=""><pre>發票類型 </pre></label>
-          <select class="type01">
-            <option value="雲端發票">雲端發票</option>
-            <option value="捐贈發票">捐贈發票</option>
-            <option value="二聯式紙本">二聯式紙本</option>
-          </select>
-        </form>
-        
-        <form class="way02">
-          <label for=""><pre>載具類型 </pre></label>
-          <select class="type02">
-            <option value="會員載具">會員載具</option>
-            <option value="手機條碼">手機條碼</option>
-            <option value="自然人憑證條碼">自然人憑證條碼</option>
-          </select>
-        </form>
-      </div>
-    </div>
+    
 
     <div class="fake"></div>
 
@@ -390,29 +426,26 @@
     <script>
       // login
 
-      const signinbtn = document.querySelector('.signinbtn');
-      const signupbtn = document.querySelector('.signupbtn');
-      const formbx = document.querySelector('.formbx');
-      const body = document.querySelector('body');
-
-      signupbtn.onclick = function () {
-        formbx.classList.add('active');
-        // body.classList.add('active');
+      const toggleForm = () => {
+        const contain = document.querySelector('.contain');
+        contain.classList.toggle('active');
       };
 
-      signinbtn.onclick = function () {
-        formbx.classList.remove('active');
-        // body.classList.remove('active');
-      };
-
-      let clicklogin = document.querySelector('.click-login');
+      let clicklogin = document.querySelectorAll('.click-login');
       let black = document.querySelector('.black');
       let wrong = document.querySelector('.wrong');
       let wrong02 = document.querySelector('.wrong02');
 
-      clicklogin.addEventListener('click', function () {
-        black.style.visibility = 'visible';
-        black.style.opacity = '1';
+      // clicklogin.addEventListener('click', function () {
+      //   black.style.visibility = 'visible';
+      //   black.style.opacity = '1';
+      // });
+      console.log(clicklogin);
+      clicklogin.forEach((e) => {
+        e.addEventListener('click', function () {
+          black.style.visibility = 'visible';
+          black.style.opacity = '1';
+        });
       });
 
       wrong.addEventListener('click', function () {
