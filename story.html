@@ -21,44 +21,47 @@
   <body>
     <!-- login -->
     <div class="black">
-      <div class="login_container">
-        <div class="bluebg">
-          <div class="box signin">
-            <h2>已有帳號 ?</h2>
-            <button class="signinbtn">登入</button>
+      <div class="contain">
+        <div class="user signinBx">
+          <div class="imgBx">
+            <img src="./img/fred01.jpg" alt="" />
           </div>
-
-          <div class="box signup">
-            <h2>還未註冊 ?</h2>
-            <button class="signupbtn">註冊</button>
-          </div>
-        </div>
-
-        <div class="formbx">
-          <div class="form signinform">
-            <form>
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
               <div class="wrong">
                 <i class="fas fa-times-circle"></i>
               </div>
-              <h3>會員登入</h3>
-              <input type="text" placeholder="輸入帳號" />
-              <input type="password" placeholder="輸入密碼" />
-              <input type="submit" value="登入" />
-              <a href="#" class="forgot">忘記密碼</a>
+              <h2>會員登入</h2>
+              <input type="text" name="" placeholder="輸入帳號" />
+              <input type="password" name="" placeholder="輸入密碼" />
+              <input type="submit" name="" value="登入" />
+              <p class="signup">
+                還未註冊 ?
+                <a href="#" onclick="toggleForm();">註冊</a>
+              </p>
             </form>
           </div>
-          <div class="form signupform">
-            <form>
+        </div>
+        <div class="user signupBx">
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
               <div class="wrong02">
                 <i class="fas fa-times-circle"></i>
               </div>
-              <h3>會員註冊</h3>
-              <input type="text" placeholder="輸入帳號" />
-              <input type="text" placeholder="電子信箱" />
-              <input type="password" placeholder="輸入密碼" />
-              <input type="password" placeholder="確認密碼" />
-              <input type="submit" value="註冊" />
+              <h2>註冊會員</h2>
+              <input type="text" name="" placeholder="輸入帳號" />
+              <input type="email" name="" placeholder="電子信箱" />
+              <input type="password" name="" placeholder="輸入密碼" />
+              <input type="password" name="" placeholder="確認密碼" />
+              <input type="submit" name="" value="註冊" />
+              <p class="signup">
+                已有帳號 ?
+                <a href="#" onclick="toggleForm();">登入</a>
+              </p>
             </form>
+          </div>
+          <div class="imgBx">
+            <img src="./img/fred02.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -369,19 +372,9 @@
 
       // login
 
-      const signinbtn = document.querySelector('.signinbtn');
-      const signupbtn = document.querySelector('.signupbtn');
-      const formbx = document.querySelector('.formbx');
-      const body = document.querySelector('body');
-
-      signupbtn.onclick = function () {
-        formbx.classList.add('active');
-        // body.classList.add('active');
-      };
-
-      signinbtn.onclick = function () {
-        formbx.classList.remove('active');
-        // body.classList.remove('active');
+      const toggleForm = () => {
+        const contain = document.querySelector('.contain');
+        contain.classList.toggle('active');
       };
 
       let clicklogin = document.querySelector('.click-login');
