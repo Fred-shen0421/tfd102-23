@@ -123,6 +123,11 @@
               <li><a href="./allproduct.html">產品</a></li>
               <li><a href="./videopage.html">料理系列</a></li>
               <li><a href="#">禮盒系列</a></li>
+              <li>
+                <div class="click-login">
+                  <i class="fas fa-user"></i>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -204,38 +209,38 @@
       </pre>
 
       <pre class="cook-content-rwd">
-        ＝料理步驟­­­­＝
+  ＝料理步驟­­­­＝
 
 
-        A ‧ 150g 豬絞肉
-        ‧ 1 盒嫩豆腐︱切塊備用。
-        ‧ 3 瓣大蒜︱切碎備用。
-        ‧ 1 小截薑︱切細丁備用。
-        ‧ 2 根蔥︱切細段備用，蔥綠跟蔥白分開放。
+  A ‧ 150g 豬絞肉
+  ‧ 1 盒嫩豆腐︱切塊備用。
+  ‧ 3 瓣大蒜︱切碎備用。
+  ‧ 1 小截薑︱切細丁備用。
+  ‧ 2 根蔥︱切細段備用，蔥綠跟蔥白分開放。
 
 
-        B ‧ 2 小匙辣豆瓣醬
-        ‧ 10ml 醬油
-        ‧ 少許太白粉︱兌水備用。
-        ‧ 花椒粉或辣油（依個人口味添加）
+  B ‧ 2 小匙辣豆瓣醬
+  ‧ 10ml 醬油
+  ‧ 少許太白粉︱兌水備用。
+  ‧ 花椒粉或辣油（依個人口味添加）
 
-        C ‧ 150ml 水
+  C ‧ 150ml 水
 
 
-        1.　熱油鍋，將大蒜、薑及蔥白丟入鍋中爆香。
+  1.　熱油鍋，將大蒜、薑及蔥白丟入鍋中爆香。
 
-        2.　加入絞肉，炒至熟。
+  2.　加入絞肉，炒至熟。
 
-        3.　加入2 小匙辣豆瓣醬及10ml 醬油，跟絞肉
-            拌炒均勻（若要加花椒粉可於這時加入）。
+  3.　加入2 小匙辣豆瓣醬及10ml 醬油，跟絞肉
+      拌炒均勻（若要加花椒粉可於這時加入）。
 
-        4.　加入150ml 的水，把湯汁調勻，放入豆腐
-           （水大約會蓋到的豆腐七、八分滿，若加了
-           豆腐發現水不夠，可再補）。
+  4.　加入150ml 的水，把湯汁調勻，放入豆腐
+      （水大約會蓋到的豆腐七、八分滿，若加了
+      豆腐發現水不夠，可再補）。
 
-        5.　豆腐用小火滾5分鐘入味，最後用太白粉水
-            勾薄芡，灑上蔥綠即完成 ( 想再辣一些可
-            最後淋辣油）。
+  5.　豆腐用小火滾5分鐘入味，最後用太白粉水
+      勾薄芡，灑上蔥綠即完成 ( 想再辣一些可
+      最後淋辣油）。
       </pre>
     </section>
 
@@ -299,14 +304,21 @@
         contain.classList.toggle('active');
       };
 
-      let clicklogin = document.querySelector('.click-login');
+      let clicklogin = document.querySelectorAll('.click-login');
       let black = document.querySelector('.black');
       let wrong = document.querySelector('.wrong');
       let wrong02 = document.querySelector('.wrong02');
 
-      clicklogin.addEventListener('click', function () {
-        black.style.visibility = 'visible';
-        black.style.opacity = '1';
+      // clicklogin.addEventListener('click', function () {
+      //   black.style.visibility = 'visible';
+      //   black.style.opacity = '1';
+      // });
+      console.log(clicklogin);
+      clicklogin.forEach((e) => {
+        e.addEventListener('click', function () {
+          black.style.visibility = 'visible';
+          black.style.opacity = '1';
+        });
       });
 
       wrong.addEventListener('click', function () {
