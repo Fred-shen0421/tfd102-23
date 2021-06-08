@@ -126,6 +126,11 @@
               <li><a href="./allproduct.html">產品</a></li>
               <li><a href="./videopage.html">料理系列</a></li>
               <li><a href="#">禮盒系列</a></li>
+              <li>
+                <div class="click-login">
+                  <i class="fas fa-user"></i>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -299,14 +304,17 @@
         contain.classList.toggle('active');
       };
 
-      let clicklogin = document.querySelector('.click-login');
+      let clicklogin = document.querySelectorAll('.click-login');
       let black = document.querySelector('.black');
       let wrong = document.querySelector('.wrong');
       let wrong02 = document.querySelector('.wrong02');
 
-      clicklogin.addEventListener('click', function () {
-        black.style.visibility = 'visible';
-        black.style.opacity = '1';
+      console.log(clicklogin);
+      clicklogin.forEach((e) => {
+        e.addEventListener('click', function () {
+          black.style.visibility = 'visible';
+          black.style.opacity = '1';
+        });
       });
 
       wrong.addEventListener('click', function () {
