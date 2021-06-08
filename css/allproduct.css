@@ -502,7 +502,7 @@
 }
 
 .product-page {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 1200px;
   height: 650px;
   background-color: white;
