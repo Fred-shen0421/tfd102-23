@@ -102,6 +102,10 @@ body {
   border-bottom: 2px solid rgba(230, 0, 0, 1);
 }
 
+.menu-wrap {
+  display: none;
+}
+
 .black {
   display: flex;
   justify-content: center;
@@ -300,7 +304,7 @@ body {
 .shopping-car-btn {
   width: 100%;
   height: 100px;
-  /* border: 1px solid re d; */
+  /* border: 1px solid red; */
   background-color: white;
 }
 
@@ -388,6 +392,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .chili-img-center {
   display: block;
   width: 180px;
@@ -616,6 +621,10 @@ body {
   align-items: flex-end;
 }
 
+.another-chili {
+  display: none;
+}
+
 .banner02 {
   /* border: 1px solid red; */
   background-image: url('../img/banner02.png');
@@ -801,6 +810,7 @@ body {
 .poker-card {
   /* border: 1px solid red; */
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
