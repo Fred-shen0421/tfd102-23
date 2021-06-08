@@ -42,6 +42,18 @@
     display: none;
   }
 
+  .black .contain {
+    max-width: 400px;
+  }
+
+  .black .contain .imgBx {
+    display: none;
+  }
+
+  .black .contain .user .formBx {
+    width: 100%;
+  }
+
   .menu-wrap {
     display: flex;
     position: fixed;
@@ -275,7 +287,9 @@
   }
 
   .cook-content-rwd {
+    /* border: 1px solid black; */
     display: flex;
+    justify-content: center;
     margin-top: 100px;
   }
 
