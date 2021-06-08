@@ -12,48 +12,52 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/videopage_rwd.css" />
   </head>
   <body>
     <!-- login -->
     <div class="black">
-      <div class="login_container">
-        <div class="bluebg">
-          <div class="box signin">
-            <h2>已有帳號 ?</h2>
-            <button class="signinbtn">登入</button>
+      <div class="contain">
+        <div class="user signinBx">
+          <div class="imgBx">
+            <img src="./img/fred01.jpg" alt="" />
           </div>
-
-          <div class="box signup">
-            <h2>還未註冊 ?</h2>
-            <button class="signupbtn">註冊</button>
-          </div>
-        </div>
-
-        <div class="formbx">
-          <div class="form signinform">
-            <form>
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
               <div class="wrong">
                 <i class="fas fa-times-circle"></i>
               </div>
-              <h3>會員登入</h3>
-              <input type="text" placeholder="輸入帳號" />
-              <input type="password" placeholder="輸入密碼" />
-              <input type="submit" value="登入" />
-              <a href="#" class="forgot">忘記密碼</a>
+              <h2>會員登入</h2>
+              <input type="text" name="" placeholder="輸入帳號" />
+              <input type="password" name="" placeholder="輸入密碼" />
+              <input type="submit" name="" value="登入" />
+              <p class="signup">
+                還未註冊 ?
+                <a href="#" onclick="toggleForm();">註冊</a>
+              </p>
             </form>
           </div>
-          <div class="form signupform">
-            <form>
+        </div>
+        <div class="user signupBx">
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
               <div class="wrong02">
                 <i class="fas fa-times-circle"></i>
               </div>
-              <h3>會員註冊</h3>
-              <input type="text" placeholder="輸入帳號" />
-              <input type="text" placeholder="電子信箱" />
-              <input type="password" placeholder="輸入密碼" />
-              <input type="password" placeholder="確認密碼" />
-              <input type="submit" value="註冊" />
+              <h2>註冊會員</h2>
+              <input type="text" name="" placeholder="輸入帳號" />
+              <input type="email" name="" placeholder="電子信箱" />
+              <input type="password" name="" placeholder="輸入密碼" />
+              <input type="password" name="" placeholder="確認密碼" />
+              <input type="submit" name="" value="註冊" />
+              <p class="signup">
+                已有帳號 ?
+                <a href="#" onclick="toggleForm();">登入</a>
+              </p>
             </form>
+          </div>
+          <div class="imgBx">
+            <img src="./img/fred02.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -105,6 +109,26 @@
         </div>
       </div>
     </header>
+
+    <!-- hamburger-menu -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="./news.html">最新消息</a></li>
+              <li><a href="./story.html">品牌故事</a></li>
+              <li><a href="./allproduct.html">產品</a></li>
+              <li><a href="./videopage.html">料理系列</a></li>
+              <li><a href="#">禮盒系列</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hamburger-menu(end) -->
 
     <div class="middle">
       <aside class="aside">
@@ -178,6 +202,41 @@
 
         5.　豆腐用小火滾5分鐘入味，最後用太白粉水勾薄芡，灑上蔥綠即完成 ( 想再辣一些可最後淋辣油）。
       </pre>
+
+      <pre class="cook-content-rwd">
+        ＝料理步驟­­­­＝
+
+
+        A ‧ 150g 豬絞肉
+        ‧ 1 盒嫩豆腐︱切塊備用。
+        ‧ 3 瓣大蒜︱切碎備用。
+        ‧ 1 小截薑︱切細丁備用。
+        ‧ 2 根蔥︱切細段備用，蔥綠跟蔥白分開放。
+
+
+        B ‧ 2 小匙辣豆瓣醬
+        ‧ 10ml 醬油
+        ‧ 少許太白粉︱兌水備用。
+        ‧ 花椒粉或辣油（依個人口味添加）
+
+        C ‧ 150ml 水
+
+
+        1.　熱油鍋，將大蒜、薑及蔥白丟入鍋中爆香。
+
+        2.　加入絞肉，炒至熟。
+
+        3.　加入2 小匙辣豆瓣醬及10ml 醬油，跟絞肉
+            拌炒均勻（若要加花椒粉可於這時加入）。
+
+        4.　加入150ml 的水，把湯汁調勻，放入豆腐
+           （水大約會蓋到的豆腐七、八分滿，若加了
+           豆腐發現水不夠，可再補）。
+
+        5.　豆腐用小火滾5分鐘入味，最後用太白粉水
+            勾薄芡，灑上蔥綠即完成 ( 想再辣一些可
+            最後淋辣油）。
+      </pre>
     </section>
 
     <footer class="footer">
@@ -235,19 +294,9 @@
 
       // login
 
-      const signinbtn = document.querySelector('.signinbtn');
-      const signupbtn = document.querySelector('.signupbtn');
-      const formbx = document.querySelector('.formbx');
-      const body = document.querySelector('body');
-
-      signupbtn.onclick = function () {
-        formbx.classList.add('active');
-        // body.classList.add('active');
-      };
-
-      signinbtn.onclick = function () {
-        formbx.classList.remove('active');
-        // body.classList.remove('active');
+      const toggleForm = () => {
+        const contain = document.querySelector('.contain');
+        contain.classList.toggle('active');
       };
 
       let clicklogin = document.querySelector('.click-login');
